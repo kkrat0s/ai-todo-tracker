@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Task Control Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="workspace-container">
+        <header class="action-header">
+            <button id="back-to-listening" class="nav-btn">← Voice Capture</button>
+            <div class="segment-control">
+                <button class="seg-btn active" data-status="all">All</button>
+                <button class="seg-btn" data-status="Not Started">Pending</button>
+                <button class="seg-btn" data-status="In Progress">Active</button>
+                <button class="seg-btn" data-status="Completed">Done</button>
+            </div>
+        </header>
+        <main class="content-view">
+            <ul id="matrix-render-target"></ul>
+            <div id="status-state" class="empty-message"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
